@@ -54,10 +54,8 @@ function draw() {
   checkVideoStatus();
 
   // --- L0: 马赛克背景 ---
-  if (isVideoReady) {
-    drawCircleMosaic();
-  } else {
-  }
+  drawCircleMosaic();
+
 
   // --- L1: 边缘生长线 ---
   if (frameCount % 6 === 0 && edgeVines.length < 150) edgeVines.push(new EdgeVine());
