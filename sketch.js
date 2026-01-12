@@ -57,8 +57,6 @@ function draw() {
   if (isVideoReady) {
     drawCircleMosaic();
   } else {
-    fill(60); textAlign(CENTER); noStroke();
-    text("Loading Neural Rhythm...", width/2, height/2);
   }
 
   // --- L1: 边缘生长线 ---
